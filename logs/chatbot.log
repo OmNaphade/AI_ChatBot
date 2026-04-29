@@ -1,0 +1,991 @@
+2026-04-29 00:06:19.046 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 24968 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 00:06:19.046 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.5.11, Spring v6.2.16
+2026-04-29 00:06:19.047 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 00:06:19.089 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 00:06:19.089 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 00:06:20.106 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:06:20.107 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 00:06:20.219 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 2 JPA repository interfaces.
+2026-04-29 00:06:20.230 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:06:20.231 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 00:06:20.242 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:06:20.242 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:06:20.242 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-04-29 00:06:20.450 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d20a9d0e-3238-3b17-abd4-91a3a6dd55b9
+2026-04-29 00:06:21.041 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 00:06:21.052 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 00:06:21.052 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-29 00:06:21.092 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 00:06:21.092 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2002 ms
+2026-04-29 00:06:21.392 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 00:06:21.437 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-29 00:06:21.461 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 00:06:21.660 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 00:06:21.682 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 00:06:21.799 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cb26908
+2026-04-29 00:06:21.800 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 00:06:21.827 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 00:06:21.838 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-29 00:06:22.440 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 00:06:22.493 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-04-29 00:06:22.493 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "idx_github_id" of relation "users" does not exist, skipping
+2026-04-29 00:06:22.494 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-04-29 00:06:22.494 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "idx_username" of relation "users" does not exist, skipping
+2026-04-29 00:06:22.497 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:06:22.513 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIController' defined in file [D:\PRACTICE\TELUSKO\SpringAISample\target\classes\com\springaisample\AIController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.chat.client.ChatClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-04-29 00:06:22.513 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:06:22.516 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 00:06:22.540 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 00:06:22.542 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-29 00:06:22.553 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-29 00:06:22.571 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.springaisample.AIController required a bean of type 'org.springframework.ai.chat.client.ChatClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.ai.chat.client.ChatClient' in your configuration.
+
+2026-04-29 00:09:51.506 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 35688 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 00:09:51.507 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.5.11, Spring v6.2.16
+2026-04-29 00:09:51.507 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 00:09:51.535 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 00:09:51.536 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 00:09:52.434 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:09:52.435 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 00:09:52.527 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2026-04-29 00:09:52.540 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:09:52.542 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 00:09:52.553 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:09:52.554 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:09:52.554 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 00:09:52.808 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d20a9d0e-3238-3b17-abd4-91a3a6dd55b9
+2026-04-29 00:09:53.352 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 00:09:53.362 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 00:09:53.362 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-29 00:09:53.400 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 00:09:53.400 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1864 ms
+2026-04-29 00:09:53.694 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 00:09:53.725 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-29 00:09:53.744 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 00:09:53.895 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 00:09:53.918 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 00:09:54.024 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f441480
+2026-04-29 00:09:54.025 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 00:09:54.045 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 00:09:54.057 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-29 00:09:54.617 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 00:09:54.656 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:09:54.670 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'AIController' defined in file [D:\PRACTICE\TELUSKO\SpringAISample\target\classes\com\springaisample\AIController.class]: Failed to instantiate [com.springaisample.AIController]: No default constructor found
+2026-04-29 00:09:54.671 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:09:54.673 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 00:09:54.796 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 00:09:54.798 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-29 00:09:54.808 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-29 00:09:54.823 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'AIController' defined in file [D:\PRACTICE\TELUSKO\SpringAISample\target\classes\com\springaisample\AIController.class]: Failed to instantiate [com.springaisample.AIController]: No default constructor found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.springaisample.SpringAiSampleApplication.main(SpringAiSampleApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springaisample.AIController]: No default constructor found
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:119)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351)
+	... 22 common frames omitted
+Caused by: java.lang.NoSuchMethodException: com.springaisample.AIController.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3763)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2932)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:115)
+	... 23 common frames omitted
+2026-04-29 00:10:47.679 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 24384 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 00:10:47.680 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.5.11, Spring v6.2.16
+2026-04-29 00:10:47.680 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 00:10:47.708 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 00:10:47.709 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 00:10:48.656 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:10:48.657 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 00:10:48.751 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2026-04-29 00:10:48.761 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:10:48.762 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 00:10:48.773 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:10:48.774 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:10:48.774 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-29 00:10:48.993 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d20a9d0e-3238-3b17-abd4-91a3a6dd55b9
+2026-04-29 00:10:49.562 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 00:10:49.571 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 00:10:49.571 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-29 00:10:49.606 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 00:10:49.607 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1898 ms
+2026-04-29 00:10:49.893 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 00:10:49.927 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-29 00:10:49.947 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 00:10:50.105 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 00:10:50.127 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 00:10:50.233 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b00ec8
+2026-04-29 00:10:50.234 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 00:10:50.254 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 00:10:50.266 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-29 00:10:50.810 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 00:10:50.845 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:10:51.328 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIController' defined in file [D:\PRACTICE\TELUSKO\SpringAISample\target\classes\com\springaisample\AIController.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'chatService' defined in file [D:\PRACTICE\TELUSKO\SpringAISample\target\classes\com\springaisample\service\ChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.chat.client.ChatClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-04-29 00:10:51.328 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:10:51.331 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 00:10:51.333 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 00:10:51.335 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-29 00:10:51.348 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-29 00:10:51.367 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.springaisample.service.ChatService required a bean of type 'org.springframework.ai.chat.client.ChatClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.ai.chat.client.ChatClient' in your configuration.
+
+2026-04-29 00:13:12.475 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 30160 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 00:13:12.476 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.5.11, Spring v6.2.16
+2026-04-29 00:13:12.477 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 00:13:12.505 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 00:13:12.505 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 00:13:13.425 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:13:13.426 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 00:13:13.538 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 2 JPA repository interfaces.
+2026-04-29 00:13:13.548 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:13:13.549 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 00:13:13.558 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:13:13.558 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:13:13.558 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-04-29 00:13:13.760 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4cbcbccc-3d4b-3789-8403-e8c015d3cc87
+2026-04-29 00:13:14.361 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 00:13:14.369 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 00:13:14.369 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-29 00:13:14.406 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 00:13:14.406 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1901 ms
+2026-04-29 00:13:14.707 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 00:13:14.737 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-29 00:13:14.757 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 00:13:14.918 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 00:13:14.938 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 00:13:15.045 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66bc869c
+2026-04-29 00:13:15.046 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 00:13:15.068 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 00:13:15.080 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-29 00:13:15.647 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 00:13:15.683 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:13:16.332 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 00:13:16.334 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 00:13:16.334 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 00:13:16.594 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 00:13:17.147 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 00:13:17.800 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 00:13:18.852 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 00:13:18.887 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'compositeCompatibilityVerifier' defined in class path resource [org/springframework/cloud/configuration/CompatibilityVerifierAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.configuration.CompositeCompatibilityVerifier]: Factory method 'compositeCompatibilityVerifier' threw exception with message: Spring Cloud/ Spring Boot version compatibility checks have failed: [[VerificationResult@2fda2860 description = 'Spring Boot [3.5.11] is not compatible with this Spring Cloud release train', action = 'Change Spring Boot version to one of the following versions [3.2.x, 3.3.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]']]
+2026-04-29 00:13:18.907 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:13:18.910 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 00:13:18.911 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 00:13:18.918 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-29 00:13:18.930 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-29 00:13:18.943 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Your project setup is incompatible with our requirements due to following reasons:
+
+- Spring Boot [3.5.11] is not compatible with this Spring Cloud release train
+
+
+Action:
+
+Consider applying the following actions:
+
+- Change Spring Boot version to one of the following versions [3.2.x, 3.3.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]
+
+
+2026-04-29 00:23:42.923 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 7868 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 00:23:42.923 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 00:23:42.924 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 00:23:42.954 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 00:23:42.954 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 00:23:43.831 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:23:43.832 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 00:23:43.926 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2026-04-29 00:23:43.936 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 00:23:43.938 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 00:23:43.947 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:23:43.948 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 00:23:43.948 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 00:23:44.196 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 00:23:44.861 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 00:23:44.873 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 00:23:44.873 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 00:23:44.917 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 00:23:44.918 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1963 ms
+2026-04-29 00:23:45.228 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 00:23:45.273 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 00:23:45.304 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 00:23:45.516 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 00:23:45.538 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 00:23:45.659 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d5f3981
+2026-04-29 00:23:45.661 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 00:23:45.688 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 00:23:46.325 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 00:23:46.376 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:23:47.068 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 00:23:47.070 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 00:23:47.070 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 00:23:47.347 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 00:23:47.860 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 00:23:48.464 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 00:23:49.490 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 00:23:49.579 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 00:23:49.596 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 7.133 seconds (process running for 7.547)
+2026-04-29 00:24:24.175 [tomcat-handler-0] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-29 00:24:24.176 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-29 00:24:24.178 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-29 00:25:32.857 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 00:25:32.859 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 00:25:32.861 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 11:23:02.513 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 26776 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:23:02.514 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:23:02.514 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:23:02.542 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 11:23:02.542 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 11:23:03.367 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:23:03.368 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:23:03.459 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:23:03.469 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:23:03.471 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:23:03.480 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:23:03.481 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:23:03.481 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:23:03.714 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:23:04.315 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:23:04.325 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:23:04.325 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:23:04.365 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:23:04.366 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1822 ms
+2026-04-29 11:23:04.669 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:23:04.701 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 11:23:04.720 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:23:04.892 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:23:04.913 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 11:23:05.023 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d5f3981
+2026-04-29 11:23:05.025 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 11:23:05.052 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:23:05.673 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:23:05.728 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:23:06.462 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:23:06.464 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:23:06.464 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:23:06.752 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 11:23:07.257 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:23:07.924 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:23:08.942 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:23:09.032 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 11:23:09.047 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 6.979 seconds (process running for 7.36)
+2026-04-29 11:23:34.374 [tomcat-handler-0] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-29 11:23:34.374 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-29 11:23:34.376 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-29 11:24:46.029 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-04-29 11:24:46.061 [Thread-13] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:24:46.063 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 11:24:46.067 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 11:24:46.181 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 26776 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:24:46.182 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:24:46.182 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:24:46.495 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:24:46.495 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:24:46.502 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:24:46.503 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:24:46.503 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:24:46.505 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:24:46.505 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:24:46.505 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:24:46.550 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:24:46.705 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:24:46.706 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:24:46.706 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:24:46.735 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:24:46.735 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 552 ms
+2026-04-29 11:24:46.906 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:24:46.907 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:24:46.913 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:24:46.913 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-04-29 11:24:46.949 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@44014c98
+2026-04-29 11:24:46.949 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-04-29 11:24:46.955 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:24:47.017 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:24:47.030 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:24:47.396 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:24:47.396 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:24:47.396 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:24:47.656 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:24:47.982 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:24:48.683 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:24:48.744 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 11:24:48.755 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 2.63 seconds (process running for 107.068)
+2026-04-29 11:24:48.757 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-29 11:25:43.840 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-04-29 11:25:43.850 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:25:43.850 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-04-29 11:25:43.852 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-04-29 11:25:43.925 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 26776 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:25:43.925 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:25:43.925 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:25:44.190 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:25:44.190 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:25:44.196 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:25:44.198 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:25:44.198 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:25:44.200 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:25:44.200 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:25:44.200 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:25:44.244 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:25:44.406 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:25:44.407 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:25:44.407 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:25:44.427 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:25:44.428 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 501 ms
+2026-04-29 11:25:44.624 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:25:44.625 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:25:44.629 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:25:44.629 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-04-29 11:25:44.669 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@6c487b95
+2026-04-29 11:25:44.669 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-04-29 11:25:44.674 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:25:44.726 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:25:44.742 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:25:45.133 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:25:45.134 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:25:45.134 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:25:45.355 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:25:45.686 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:25:46.436 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:25:46.493 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 11:25:46.504 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 2.61 seconds (process running for 164.818)
+2026-04-29 11:25:46.506 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-29 11:26:14.241 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-04-29 11:26:14.252 [Thread-27] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:26:14.252 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-04-29 11:26:14.254 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-04-29 11:26:14.332 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 26776 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:26:14.333 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:26:14.333 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:26:14.592 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:26:14.592 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:26:14.599 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:26:14.600 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:26:14.600 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:26:14.602 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:26:14.602 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:26:14.602 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:26:14.640 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:26:14.790 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:26:14.791 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:26:14.791 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:26:14.814 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:26:14.814 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 480 ms
+2026-04-29 11:26:14.983 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:26:14.985 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:26:14.990 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:26:14.990 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-04-29 11:26:15.028 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@61021ac5
+2026-04-29 11:26:15.029 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-04-29 11:26:15.034 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:26:15.071 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:26:15.082 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:26:15.447 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:26:15.447 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:26:15.447 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:26:15.662 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:26:15.985 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:26:16.709 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:26:16.762 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 11:26:16.771 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 2.469 seconds (process running for 195.085)
+2026-04-29 11:26:16.773 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-29 11:28:38.376 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 14964 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:28:38.376 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:28:38.376 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:28:38.405 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 11:28:38.405 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 11:28:39.319 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:28:39.320 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:28:39.416 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:28:39.426 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:28:39.431 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:28:39.440 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:28:39.440 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:28:39.440 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:28:39.715 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:28:40.381 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:28:40.391 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:28:40.391 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:28:40.435 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:28:40.435 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2030 ms
+2026-04-29 11:28:40.778 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:28:40.811 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 11:28:40.831 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:28:41.016 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:28:41.036 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 11:28:41.157 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54cf2ca8
+2026-04-29 11:28:41.158 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 11:28:41.180 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:28:41.777 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:28:41.816 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:28:42.502 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:28:42.504 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:28:42.504 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:28:42.764 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 11:28:43.245 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:28:43.846 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:28:44.854 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-04-29 11:28:44.944 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-04-29 11:28:44.955 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:28:44.957 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 11:28:44.960 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 11:28:44.973 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-29 11:28:44.986 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-04-29 11:34:07.156 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 24032 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:34:07.158 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:34:07.159 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:34:07.195 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 11:34:07.195 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 11:34:08.259 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:34:08.260 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:34:08.370 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:34:08.380 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:34:08.382 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:34:08.393 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:34:08.393 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:34:08.393 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:34:08.660 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:34:09.510 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-04-29 11:34:09.526 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:34:09.526 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:34:09.600 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:34:09.600 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2404 ms
+2026-04-29 11:34:10.164 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:34:10.243 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 11:34:10.288 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:34:10.631 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:34:10.667 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 11:34:10.828 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@73fe4ecc
+2026-04-29 11:34:10.830 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 11:34:10.871 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:34:11.896 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:34:11.959 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:34:13.159 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:34:13.163 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:34:13.163 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:34:13.512 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 11:34:14.098 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:34:14.793 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:34:16.023 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:34:16.129 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-04-29 11:34:16.146 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 9.506 seconds (process running for 9.946)
+2026-04-29 11:34:39.038 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:34:39.042 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 11:34:39.045 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 11:34:41.845 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 1756 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:34:41.846 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:34:41.846 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:34:41.885 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 11:34:41.885 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 11:34:42.894 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:34:42.895 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:34:43.015 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:34:43.025 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:34:43.027 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:34:43.036 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:34:43.037 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:34:43.037 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:34:43.299 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:34:43.947 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:34:43.957 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:34:43.957 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:34:44.003 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:34:44.003 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2118 ms
+2026-04-29 11:34:44.375 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:34:44.413 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 11:34:44.438 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:34:44.639 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:34:44.660 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 11:34:44.773 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bab7679
+2026-04-29 11:34:44.774 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 11:34:44.797 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:34:45.462 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:34:45.508 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:34:46.262 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:34:46.264 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:34:46.264 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:34:46.554 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 11:34:47.113 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:34:47.820 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:34:49.047 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:34:49.145 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 11:34:49.161 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 7.878 seconds (process running for 8.314)
+2026-04-29 11:34:52.134 [tomcat-handler-0] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-29 11:34:52.134 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-29 11:34:52.137 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-04-29 11:41:51.830 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:41:51.834 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 11:41:51.836 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 11:41:56.100 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 34216 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:41:56.101 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:41:56.101 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:41:56.139 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 11:41:56.139 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 11:41:57.109 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:41:57.110 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:41:57.210 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:41:57.219 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:41:57.222 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:41:57.233 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:41:57.234 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:41:57.234 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:41:57.488 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:41:58.314 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:41:58.331 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:41:58.331 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:41:58.418 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:41:58.418 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2279 ms
+2026-04-29 11:41:58.883 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:41:58.963 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 11:41:59.011 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:41:59.349 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:41:59.382 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 11:41:59.651 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@240ec415
+2026-04-29 11:41:59.654 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 11:41:59.692 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:42:00.735 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:42:00.796 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:42:01.752 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:42:01.756 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:42:01.756 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:42:02.067 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 11:42:02.638 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:42:03.368 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:42:04.563 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:42:04.669 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 11:42:04.684 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 9.16 seconds (process running for 9.621)
+2026-04-29 11:42:07.631 [tomcat-handler-0] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-29 11:42:07.632 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-29 11:42:07.634 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-29 11:43:25.875 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:43:25.878 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 11:43:25.880 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 11:43:28.086 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 12456 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:43:28.088 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:43:28.088 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:43:28.136 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 11:43:28.136 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 11:43:29.234 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:43:29.235 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:43:29.348 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:43:29.361 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:43:29.363 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:43:29.373 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:43:29.373 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:43:29.373 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:43:29.637 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:43:30.519 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:43:30.532 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:43:30.532 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:43:30.594 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:43:30.595 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2457 ms
+2026-04-29 11:43:31.143 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:43:31.205 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 11:43:31.243 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:43:31.556 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:43:31.586 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 11:43:31.748 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@240ec415
+2026-04-29 11:43:31.751 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 11:43:31.783 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:43:32.720 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:43:32.776 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:43:33.941 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:43:33.947 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:43:33.947 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:43:34.247 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 11:43:34.816 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:43:35.516 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:43:36.722 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:43:36.826 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 11:43:36.843 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 9.366 seconds (process running for 9.889)
+2026-04-29 11:43:41.231 [tomcat-handler-0] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-29 11:43:41.232 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-29 11:43:41.233 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-29 11:43:59.309 [tomcat-handler-1] DEBUG c.s.config.SecurityConfig - OAuth2 user loaded: {login=OmNaphade, id=123349518, node_id=U_kgDOB1oqDg, avatar_url=https://avatars.githubusercontent.com/u/123349518?v=4, gravatar_id=, url=https://api.github.com/users/OmNaphade, html_url=https://github.com/OmNaphade, followers_url=https://api.github.com/users/OmNaphade/followers, following_url=https://api.github.com/users/OmNaphade/following{/other_user}, gists_url=https://api.github.com/users/OmNaphade/gists{/gist_id}, starred_url=https://api.github.com/users/OmNaphade/starred{/owner}{/repo}, subscriptions_url=https://api.github.com/users/OmNaphade/subscriptions, organizations_url=https://api.github.com/users/OmNaphade/orgs, repos_url=https://api.github.com/users/OmNaphade/repos, events_url=https://api.github.com/users/OmNaphade/events{/privacy}, received_events_url=https://api.github.com/users/OmNaphade/received_events, type=User, user_view_type=private, site_admin=false, name=Om Naphade, company=null, blog=, location=null, email=null, hireable=null, bio=Full-Stack Developer | Java & Spring Boot | RESTful APIs | GCP | Backend & Cloud Engineering, twitter_username=null, notification_email=null, public_repos=11, public_gists=0, followers=0, following=0, created_at=2023-01-23T05:15:09Z, updated_at=2026-04-28T03:45:33Z, private_gists=0, total_private_repos=4, owned_private_repos=4, disk_usage=70709, collaborators=0, two_factor_authentication=true, plan={name=free, space=976562499, collaborators=0, private_repos=10000}}
+2026-04-29 11:43:59.482 [tomcat-handler-1] INFO  c.springaisample.service.UserService - Created new user: OmNaphade
+2026-04-29 11:43:59.491 [tomcat-handler-1] INFO  c.s.config.SecurityConfig - User authenticated successfully: username=OmNaphade, email=null
+2026-04-29 11:52:15.851 [tomcat-handler-11] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-04-29 11:54:39.142 [tomcat-handler-14] INFO  c.s.config.SecurityConfig - User logged out: OmNaphade
+2026-04-29 11:54:45.606 [chat-worker-1] ERROR c.springaisample.service.ChatService - Unexpected error in chat service for session session-1777443239680
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:11434/api/chat": Read timed out
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:588)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:502)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.retrieve(DefaultRestClient.java:458)
+	at org.springframework.ai.ollama.api.OllamaApi.chat(OllamaApi.java:114)
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$2(OllamaChatModel.java:236)
+	at io.micrometer.observation.Observation.observe(Observation.java:565)
+	at org.springframework.ai.ollama.OllamaChatModel.internalCall(OllamaChatModel.java:234)
+	at org.springframework.ai.ollama.OllamaChatModel.call(OllamaChatModel.java:219)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:565)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:565)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.chatResponse(DefaultChatClient.java:435)
+	at com.springaisample.service.ChatService.chat(ChatService.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at org.springframework.util.concurrent.FutureUtils.lambda$toSupplier$0(FutureUtils.java:74)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:149)
+	at org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.hc.core5.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:247)
+	at org.apache.hc.core5.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:54)
+	at org.apache.hc.core5.http.impl.io.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:304)
+	at org.apache.hc.core5.http.impl.io.HttpRequestExecutor.execute(HttpRequestExecutor.java:175)
+	at org.apache.hc.core5.http.impl.io.HttpRequestExecutor.execute(HttpRequestExecutor.java:218)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager$InternalConnectionEndpoint.execute(PoolingHttpClientConnectionManager.java:717)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.execute(InternalExecRuntime.java:216)
+	at org.apache.hc.client5.http.impl.classic.MainClientExec.execute(MainClientExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:188)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:496)
+	... 28 common frames omitted
+2026-04-29 11:54:45.636 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:54:45.640 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 11:54:45.642 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 11:54:48.277 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 15952 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:54:48.278 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:54:48.279 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:54:48.317 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 11:54:48.317 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 11:54:49.281 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:54:49.282 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:54:49.386 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:54:49.395 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:54:49.398 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:54:49.405 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:54:49.406 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:54:49.406 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:54:49.654 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:54:50.299 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:54:50.319 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:54:50.319 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:54:50.361 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:54:50.361 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2043 ms
+2026-04-29 11:54:50.701 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:54:50.749 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 11:54:50.777 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:54:50.991 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:54:51.014 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 11:54:51.133 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6db4880d
+2026-04-29 11:54:51.134 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 11:54:51.163 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:54:51.807 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:54:51.867 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:54:52.588 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:54:52.589 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:54:52.590 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:54:52.875 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 11:54:53.383 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:54:54.010 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:54:55.079 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:54:55.171 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 11:54:55.189 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 7.393 seconds (process running for 7.969)
+2026-04-29 11:54:58.381 [tomcat-handler-0] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-29 11:54:58.381 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-29 11:54:58.383 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-29 11:54:59.895 [tomcat-handler-1] DEBUG c.s.config.SecurityConfig - OAuth2 user loaded: {login=OmNaphade, id=123349518, node_id=U_kgDOB1oqDg, avatar_url=https://avatars.githubusercontent.com/u/123349518?v=4, gravatar_id=, url=https://api.github.com/users/OmNaphade, html_url=https://github.com/OmNaphade, followers_url=https://api.github.com/users/OmNaphade/followers, following_url=https://api.github.com/users/OmNaphade/following{/other_user}, gists_url=https://api.github.com/users/OmNaphade/gists{/gist_id}, starred_url=https://api.github.com/users/OmNaphade/starred{/owner}{/repo}, subscriptions_url=https://api.github.com/users/OmNaphade/subscriptions, organizations_url=https://api.github.com/users/OmNaphade/orgs, repos_url=https://api.github.com/users/OmNaphade/repos, events_url=https://api.github.com/users/OmNaphade/events{/privacy}, received_events_url=https://api.github.com/users/OmNaphade/received_events, type=User, user_view_type=private, site_admin=false, name=Om Naphade, company=null, blog=, location=null, email=null, hireable=null, bio=Full-Stack Developer | Java & Spring Boot | RESTful APIs | GCP | Backend & Cloud Engineering, twitter_username=null, notification_email=null, public_repos=11, public_gists=0, followers=0, following=0, created_at=2023-01-23T05:15:09Z, updated_at=2026-04-28T03:45:33Z, private_gists=0, total_private_repos=4, owned_private_repos=4, disk_usage=70709, collaborators=0, two_factor_authentication=true, plan={name=free, space=976562499, collaborators=0, private_repos=10000}}
+2026-04-29 11:55:00.023 [tomcat-handler-1] INFO  c.springaisample.service.UserService - Updated existing user: OmNaphade
+2026-04-29 11:55:00.049 [tomcat-handler-1] INFO  c.s.config.SecurityConfig - User authenticated successfully: username=OmNaphade, email=null
+2026-04-29 11:55:34.182 [tomcat-handler-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-04-29 11:56:46.092 [training-worker-1] DEBUG c.s.s.ConversationQualityScorer - Scored conversation null with quality 1.0
+2026-04-29 11:56:46.092 [training-worker-1] DEBUG c.s.service.TrainingDataCollector - Recorded conversation for session session-1777443900257 with quality score 1.0
+2026-04-29 11:59:01.275 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:59:01.278 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 11:59:01.280 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 11:59:03.173 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 38540 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 11:59:03.175 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 11:59:03.175 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 11:59:03.206 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 11:59:03.206 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 11:59:04.071 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:59:04.072 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 11:59:04.160 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+2026-04-29 11:59:04.171 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 11:59:04.173 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 11:59:04.182 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:59:04.182 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 11:59:04.182 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 11:59:04.423 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 11:59:05.027 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 11:59:05.037 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 11:59:05.038 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 11:59:05.081 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 11:59:05.081 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1875 ms
+2026-04-29 11:59:05.474 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 11:59:05.506 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 11:59:05.526 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 11:59:05.747 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 11:59:05.774 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 11:59:05.917 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3aa1d816
+2026-04-29 11:59:05.918 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 11:59:05.949 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 11:59:06.773 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 11:59:06.822 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 11:59:07.811 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 11:59:07.814 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 11:59:07.814 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 11:59:08.115 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 11:59:08.612 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 11:59:09.198 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 11:59:10.137 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 11:59:10.227 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 11:59:10.241 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 7.501 seconds (process running for 7.927)
+2026-04-29 11:59:12.504 [tomcat-handler-0] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-29 11:59:12.505 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-29 11:59:12.506 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-29 11:59:13.950 [tomcat-handler-1] DEBUG c.s.config.SecurityConfig - OAuth2 user loaded: {login=OmNaphade, id=123349518, node_id=U_kgDOB1oqDg, avatar_url=https://avatars.githubusercontent.com/u/123349518?v=4, gravatar_id=, url=https://api.github.com/users/OmNaphade, html_url=https://github.com/OmNaphade, followers_url=https://api.github.com/users/OmNaphade/followers, following_url=https://api.github.com/users/OmNaphade/following{/other_user}, gists_url=https://api.github.com/users/OmNaphade/gists{/gist_id}, starred_url=https://api.github.com/users/OmNaphade/starred{/owner}{/repo}, subscriptions_url=https://api.github.com/users/OmNaphade/subscriptions, organizations_url=https://api.github.com/users/OmNaphade/orgs, repos_url=https://api.github.com/users/OmNaphade/repos, events_url=https://api.github.com/users/OmNaphade/events{/privacy}, received_events_url=https://api.github.com/users/OmNaphade/received_events, type=User, user_view_type=private, site_admin=false, name=Om Naphade, company=null, blog=, location=null, email=null, hireable=null, bio=Full-Stack Developer | Java & Spring Boot | RESTful APIs | GCP | Backend & Cloud Engineering, twitter_username=null, notification_email=null, public_repos=11, public_gists=0, followers=0, following=0, created_at=2023-01-23T05:15:09Z, updated_at=2026-04-28T03:45:33Z, private_gists=0, total_private_repos=4, owned_private_repos=4, disk_usage=70709, collaborators=0, two_factor_authentication=true, plan={name=free, space=976562499, collaborators=0, private_repos=10000}}
+2026-04-29 11:59:14.072 [tomcat-handler-1] INFO  c.springaisample.service.UserService - Updated existing user: OmNaphade
+2026-04-29 11:59:14.092 [tomcat-handler-1] INFO  c.s.config.SecurityConfig - User authenticated successfully: username=OmNaphade, email=null
+2026-04-29 11:59:31.167 [training-worker-1] DEBUG c.s.s.ConversationQualityScorer - Scored conversation null with quality 1.0
+2026-04-29 11:59:31.167 [training-worker-1] DEBUG c.s.service.TrainingDataCollector - Recorded conversation for session session-1777444154257 with quality score 1.0
+2026-04-29 12:00:35.302 [tomcat-handler-8] INFO  c.s.config.SecurityConfig - User logged out: OmNaphade
+2026-04-29 12:00:49.796 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 12:00:49.799 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 12:00:49.801 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 12:01:10.534 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 37152 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 12:01:10.535 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 12:01:10.535 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 12:01:10.568 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 12:01:10.568 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 12:01:11.523 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 12:01:11.524 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 12:01:11.616 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2026-04-29 12:01:11.627 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 12:01:11.628 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 12:01:11.637 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 12:01:11.637 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 12:01:11.637 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 12:01:11.888 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 12:01:12.490 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 12:01:12.500 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 12:01:12.500 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 12:01:12.538 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 12:01:12.538 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1970 ms
+2026-04-29 12:01:12.916 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 12:01:12.954 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 12:01:12.976 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 12:01:13.159 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 12:01:13.180 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 12:01:13.287 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cb66628
+2026-04-29 12:01:13.288 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 12:01:13.314 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 12:01:13.905 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 12:01:13.952 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 12:01:14.640 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 12:01:14.655 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 12:01:14.655 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 12:01:14.988 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 12:01:15.670 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 12:01:16.504 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 12:01:18.025 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 12:01:18.167 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 12:01:18.195 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 8.084 seconds (process running for 8.456)
+2026-04-29 12:01:20.574 [tomcat-handler-0] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-29 12:01:20.574 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-29 12:01:20.576 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-29 12:01:21.981 [tomcat-handler-1] DEBUG c.s.config.SecurityConfig - OAuth2 user loaded: {login=OmNaphade, id=123349518, node_id=U_kgDOB1oqDg, avatar_url=https://avatars.githubusercontent.com/u/123349518?v=4, gravatar_id=, url=https://api.github.com/users/OmNaphade, html_url=https://github.com/OmNaphade, followers_url=https://api.github.com/users/OmNaphade/followers, following_url=https://api.github.com/users/OmNaphade/following{/other_user}, gists_url=https://api.github.com/users/OmNaphade/gists{/gist_id}, starred_url=https://api.github.com/users/OmNaphade/starred{/owner}{/repo}, subscriptions_url=https://api.github.com/users/OmNaphade/subscriptions, organizations_url=https://api.github.com/users/OmNaphade/orgs, repos_url=https://api.github.com/users/OmNaphade/repos, events_url=https://api.github.com/users/OmNaphade/events{/privacy}, received_events_url=https://api.github.com/users/OmNaphade/received_events, type=User, user_view_type=private, site_admin=false, name=Om Naphade, company=null, blog=, location=null, email=null, hireable=null, bio=Full-Stack Developer | Java & Spring Boot | RESTful APIs | GCP | Backend & Cloud Engineering, twitter_username=null, notification_email=null, public_repos=11, public_gists=0, followers=0, following=0, created_at=2023-01-23T05:15:09Z, updated_at=2026-04-28T03:45:33Z, private_gists=0, total_private_repos=4, owned_private_repos=4, disk_usage=70709, collaborators=0, two_factor_authentication=true, plan={name=free, space=976562499, collaborators=0, private_repos=10000}}
+2026-04-29 12:01:22.071 [tomcat-handler-1] INFO  c.springaisample.service.UserService - Updated existing user: OmNaphade
+2026-04-29 12:01:22.090 [tomcat-handler-1] INFO  c.s.config.SecurityConfig - User authenticated successfully: username=OmNaphade, email=null
+2026-04-29 12:01:55.505 [training-worker-1] DEBUG c.s.s.ConversationQualityScorer - Scored conversation null with quality 1.0
+2026-04-29 12:01:55.506 [training-worker-1] DEBUG c.s.service.TrainingDataCollector - Recorded conversation for session session-1777444282181 with quality score 1.0
+2026-04-29 12:02:37.180 [tomcat-handler-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-04-29 12:02:40.117 [training-worker-2] DEBUG c.s.s.ConversationQualityScorer - Scored conversation null with quality 1.0
+2026-04-29 12:02:40.118 [training-worker-2] DEBUG c.s.service.TrainingDataCollector - Recorded conversation for session session-1777444282181 with quality score 1.0
+2026-04-29 12:05:51.055 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 12:05:51.057 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 12:05:51.059 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-29 12:06:03.653 [restartedMain] INFO  c.s.SpringAiSampleApplication - Starting SpringAiSampleApplication using Java 21.0.9 with PID 31820 (D:\PRACTICE\TELUSKO\SpringAISample\target\classes started by omnap in D:\PRACTICE\TELUSKO)
+2026-04-29 12:06:03.654 [restartedMain] DEBUG c.s.SpringAiSampleApplication - Running with Spring Boot v3.3.8, Spring v6.1.16
+2026-04-29 12:06:03.655 [restartedMain] INFO  c.s.SpringAiSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-29 12:06:03.689 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29 12:06:03.689 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29 12:06:04.496 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 12:06:04.497 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-29 12:06:04.581 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2026-04-29 12:06:04.593 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-29 12:06:04.595 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-29 12:06:04.605 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 12:06:04.606 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springaisample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-29 12:06:04.606 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-29 12:06:04.829 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=46c77bb2-bb65-34d4-85f0-3ca65b243c76
+2026-04-29 12:06:05.439 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-29 12:06:05.454 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-29 12:06:05.455 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-29 12:06:05.498 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-29 12:06:05.498 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1809 ms
+2026-04-29 12:06:05.872 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-29 12:06:05.915 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-29 12:06:05.946 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-29 12:06:06.219 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-29 12:06:06.239 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-29 12:06:06.371 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2606563d
+2026-04-29 12:06:06.373 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-29 12:06:06.407 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-29 12:06:07.132 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-29 12:06:07.184 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 12:06:08.103 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Using the vector table name: vector_store. Is empty: false
+2026-04-29 12:06:08.105 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-04-29 12:06:08.105 [restartedMain] INFO  o.s.a.v.pgvector.PgVectorStore - vectorTableValidationsEnabled false
+2026-04-29 12:06:08.349 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-29 12:06:08.835 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29 12:06:09.416 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29 12:06:10.456 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-29 12:06:10.563 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-29 12:06:10.589 [restartedMain] INFO  c.s.SpringAiSampleApplication - Started SpringAiSampleApplication in 7.33 seconds (process running for 7.685)
+2026-04-29 12:06:12.635 [tomcat-handler-0] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-29 12:06:12.636 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-29 12:06:12.637 [tomcat-handler-0] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-29 12:06:14.002 [tomcat-handler-1] DEBUG c.s.config.SecurityConfig - OAuth2 user loaded: {login=OmNaphade, id=123349518, node_id=U_kgDOB1oqDg, avatar_url=https://avatars.githubusercontent.com/u/123349518?v=4, gravatar_id=, url=https://api.github.com/users/OmNaphade, html_url=https://github.com/OmNaphade, followers_url=https://api.github.com/users/OmNaphade/followers, following_url=https://api.github.com/users/OmNaphade/following{/other_user}, gists_url=https://api.github.com/users/OmNaphade/gists{/gist_id}, starred_url=https://api.github.com/users/OmNaphade/starred{/owner}{/repo}, subscriptions_url=https://api.github.com/users/OmNaphade/subscriptions, organizations_url=https://api.github.com/users/OmNaphade/orgs, repos_url=https://api.github.com/users/OmNaphade/repos, events_url=https://api.github.com/users/OmNaphade/events{/privacy}, received_events_url=https://api.github.com/users/OmNaphade/received_events, type=User, user_view_type=private, site_admin=false, name=Om Naphade, company=null, blog=, location=null, email=null, hireable=null, bio=Full-Stack Developer | Java & Spring Boot | RESTful APIs | GCP | Backend & Cloud Engineering, twitter_username=null, notification_email=null, public_repos=11, public_gists=0, followers=0, following=0, created_at=2023-01-23T05:15:09Z, updated_at=2026-04-28T03:45:33Z, private_gists=0, total_private_repos=4, owned_private_repos=4, disk_usage=70709, collaborators=0, two_factor_authentication=true, plan={name=free, space=976562499, collaborators=0, private_repos=10000}}
+2026-04-29 12:06:14.116 [tomcat-handler-1] INFO  c.springaisample.service.UserService - Updated existing user: OmNaphade
+2026-04-29 12:06:14.145 [tomcat-handler-1] INFO  c.s.config.SecurityConfig - User authenticated successfully: username=OmNaphade, email=null
+2026-04-29 12:06:28.729 [training-worker-1] DEBUG c.s.s.ConversationQualityScorer - Scored conversation null with quality 1.0
+2026-04-29 12:06:28.729 [training-worker-1] DEBUG c.s.service.TrainingDataCollector - Recorded conversation for session session-1777444574230 with quality score 1.0
+2026-04-29 12:12:12.436 [training-worker-2] DEBUG c.s.s.ConversationQualityScorer - Scored conversation null with quality 1.0
+2026-04-29 12:12:12.436 [training-worker-2] DEBUG c.s.service.TrainingDataCollector - Recorded conversation for session session-1777444911299 with quality score 1.0
+2026-04-29 12:12:50.575 [training-worker-1] DEBUG c.s.s.ConversationQualityScorer - Scored conversation null with quality 1.0
+2026-04-29 12:12:50.575 [training-worker-1] DEBUG c.s.service.TrainingDataCollector - Recorded conversation for session session-1777444911299 with quality score 1.0
+2026-04-29 12:29:40.384 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 12:29:40.391 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-29 12:29:40.395 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

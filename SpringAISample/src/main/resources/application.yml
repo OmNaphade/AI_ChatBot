@@ -1,0 +1,89 @@
+spring:
+  application:
+    name: SpringAISample
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+
+      chat:
+        model: smallthinker:latest
+        options:
+          temperature: 0.0
+          max-tokens: 100
+
+      embedding:
+        model: smallthinker:latest
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/chatbot_db
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  threads:
+    virtual:
+      enabled: true
+
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 2000ms
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: "Ov23liiNWGUDM8hlif4g"
+            client-secret: "91100f43f7f81753f7fc3d02dccdcb91313eeba5"
+            scope: user:email,read:user
+        provider:
+          github:
+            authorization-uri: https://github.com/login/oauth/authorize
+            token-uri: https://github.com/login/oauth/access_token
+            user-info-uri: https://api.github.com/user
+            user-name-attribute: login
+
+app:
+  rate-limit:
+    requests-per-minute: 100
+
+  training:
+    interval-minutes: 30
+    quality-threshold: 0.85
+
+  vector-store:
+    top-k: 5
+    similarity-threshold: 0.75
+
+  auth:
+    enabled: true
+    allowed-domains: github.com
+
+  security:
+    cors:
+      allowed-origins: ${ALLOWED_ORIGINS:http://localhost:3000}
+      allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+      allowed-headers: "*"
+      allow-credentials: true
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.springaisample: DEBUG
+    org.springframework.ai: INFO
+    org.springframework.data: INFO
+    org.springframework.security: DEBUG
+
+server:
+  port: 8080
+
